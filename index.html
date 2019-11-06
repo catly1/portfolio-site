@@ -38,7 +38,13 @@
 							</ul>
 						</nav>
 					</header>
-
+					
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
 				<!-- Main -->
 					<div id="main">
 
@@ -46,32 +52,32 @@
 							<article id="who">
 								<h2 class="major">Who am I?</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>I'm Carlos Jacob Aurelio Catly, a software engineer and a tech enthusiast. My hobbies include: building model kits, drawing and creating music. Software development allows me to be creative and that's why I love what I do. <a href="assets/docs/resume.pdf">See my full resume here.</a></p>
+								<p>I'm Carlos Catly, a software engineer and a tech enthusiast. I love building model kits, drawing and creating music. Software development allows me to be creative and that's why I love what I do. <a href="assets/docs/resume.pdf">See my full resume here.</a></p>
 
 							</article>
 
 						<!-- Work -->
 							<article id="projects">
 								<h2 class="major">Meofy</h2>
-								<a href="https://moefy.herokuapp.com/"><span class="image main"><img src="images/pic02.jpg" alt="" /></span></a>
-								<a>Live</a><a>GitHub</a>
+								<a href="https://moefy.herokuapp.com/"><span class="image main"><img src="images/moefy.png" alt="" /></span></a>
+								<a href="https://moefy.herokuapp.com/" class="live">Live</a><a href="https://github.com/catly1/moefy">GitHub</a>
 								<p>A single-page Spotify clone that scales on any desktop screen size. A user can listen to music continously and seamlessly while navigating through the site with a sleek and stylish music player.</p>
 
 
 								<h2 class="major">Amazon Forest</h2>
-								<a href="https://moefy.herokuapp.com/"><span class="image main"><img src="images/pic02.jpg" alt="" /></span></a>
-								<a>Live</a><a>GitHub</a>
+								<a href="https://amazonforest.herokuapp.com/"><span class="image main"><img src="images/amazonforest.png" alt="" /></span></a>
+								<a class="live" href="https://amazonforest.herokuapp.com/">Live</a><a href="https://github.com/tbbennett1/AmazonForest">GitHub</a>
 								<p>An Amazon clone but as a single-page site complete with search/suggestions and the ability to filter by categories.</p>
 
 
 								<h2 class="major">DueMe</h2>
-								<a href="https://moefy.herokuapp.com/"><span class="image main"><img src="images/pic02.jpg" alt="" /></span></a>
-								<a>Live</a><a>GitHub</a>
+								<a href="http://dueme.herokuapp.com/"><span class="image main"><img src="images/dueme.png" alt="" /></span></a>
+								<a href="http://dueme.herokuapp.com/" class="live">Live</a><a href="https://github.com/AnoushSaroyan/DueMe">GitHub</a>
 								<p>A task Management site, that uses Apollo/GraphQL. A user can create a team with other users, set projects, and manage tasks.</p>
 
 								<h2 class="major">Twin Tales!</h2>
-								<a href="https://moefy.herokuapp.com/"><span class="image main"><img src="images/pic02.jpg" alt="" /></span></a>
-								<a>Live</a><a>GitHub</a>
+								<a href="https://twintales.herokuapp.com/"><span class="image main"><img src="images/twin.png" alt="" /></span></a>
+								<a href="https://twintales.herokuapp.com/" class="live">Live</a><a href="https://github.com/catly1/TwinTales">GitHub</a>
 								<p>A passion project built entirely on JavaScript. It is a platformer game where you control two characters at the same time. Hop on to platforms and over monsters to get both to the doors!</p>
 							</article>
 
@@ -85,26 +91,29 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
+							<form action="POST" data-netlify="true">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
 									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+									<div class="field">
+										<div data-netlify-recaptcha="true"></div>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+							</form>
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -358,9 +367,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+					<!-- <footer id="footer">
 						<p class="copyright">&copy; Carlos Catly. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					</footer> -->
 
 			</div>
 
