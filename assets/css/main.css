@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+iframe{
+	height: 1550px
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -120,7 +124,9 @@ input, select, textarea {
 			html {
 				font-size: 12pt;
 			}
-
+			iframe{
+				height: 1192px
+			}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -129,12 +135,20 @@ input, select, textarea {
 				font-size: 11pt;
 			}
 
+			iframe{
+				height: 846px;
+			}
+
 		}
 
 		@media screen and (max-width: 360px) {
 
 			html {
 				font-size: 10pt;
+			}
+
+			iframe{
+				height: 424px;
 			}
 
 		}
@@ -1676,3 +1690,4 @@ a {
 	margin-bottom: 20px;
 	font-size: 20px;
 }
+
